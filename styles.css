@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+    box-sizing: border-box;
+}
+body{
+    background: #fefefe;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: #40C797;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul {
+    display: flex;
+}
+.nav-bar ul li a {
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    transition: 0.2s;
+    margin: 0 5px;
+    font-size: 15px;
+
+}
+.nav-bar ul li a:hover{
+    color: #40C797;
+    background: #fefefe;
+}
+    
+@media only screen and(max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and(max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and(max-width: 900px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 450px;
+    }
+    .nav-bar {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+        color: red;
+
+    }
+}
+
+#titulo{
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 20px;
+}
+#titulo b{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: #4d9659;
+}
+
+.img{
+    width: 31%;
+    align-items: center;
+    transform: translate(0%,10%);
+}
+
+.text{
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    font-weight: 400;
+    color: #282c47;
+    margin: 20px;
+    transform: translate(0%,150%);
+    
+}
