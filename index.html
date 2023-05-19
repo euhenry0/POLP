@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>ADM</title>
+</head>
+<body>
+    
+   
+    <header>
+        <p id="titulo">Polp<b>+</b>Fortal</div></p>
+        <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+    
+            <li>
+                <a href="#">Adiconar Mercado</a>
+            </li>
+            <li>
+                <a href="#">Adicionar Produto</a>
+            </li>
+            <li>
+                <a href="#">Adicionar Adm</a>
+            </li>
+            <li>
+                <a href="#">Consultar</a>
+            </li>
+            <li>
+                <a href="#">Consultar Users Ativos</a>
+            </li>
+            <li>
+                <a href="#">Excluir</a>
+            </li>
+            <li>
+                <a href="#">Sair</a>
+            </li>
+            
+        </ul>
+    </nav>
+    </header>
+    <center>
+        <p class="text">Olá adm!...</p>
+    <img src="log.svg" class="img">
+    
+</center>
+    <script>
+        hambuger = document.querySelector(".hamburger");
+        hambuger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toogle("active;")
+        }
+    </script>
+
+
+</body>
+</html>
